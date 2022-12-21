@@ -1,0 +1,44 @@
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+EPOCH 0 : tensor(-44.1252, dtype=torch.float64)
+EPOCH 1 : tensor(-44.3933, dtype=torch.float64)
+EPOCH 2 : tensor(-43.7453, dtype=torch.float64)
+EPOCH 3 : tensor(-44.1102, dtype=torch.float64)
+EPOCH 4 : tensor(-43.7855, dtype=torch.float64)
+EPOCH 5 : tensor(-43.4839, dtype=torch.float64)
+EPOCH 6 : tensor(-44.2546, dtype=torch.float64)
+EPOCH 7 : tensor(-43.3051, dtype=torch.float64)
+EPOCH 8 : tensor(-43.3722, dtype=torch.float64)
+EPOCH 9 : tensor(-43.2402, dtype=torch.float64)
+EPOCH 10 : tensor(-43.6233, dtype=torch.float64)
+EPOCH 11 : tensor(-43.7524, dtype=torch.float64)
+EPOCH 12 : tensor(-43.6049, dtype=torch.float64)
+EPOCH 13 : tensor(-44.0218, dtype=torch.float64)
+EPOCH 14 : tensor(-43.4587, dtype=torch.float64)
+EPOCH 15 : tensor(-43.7855, dtype=torch.float64)
+EPOCH 16 : tensor(-43.8691, dtype=torch.float64)
+EPOCH 17 : tensor(-43.4738, dtype=torch.float64)
+EPOCH 18 : tensor(-43.7164, dtype=torch.float64)
+EPOCH 19 : tensor(-43.6262, dtype=torch.float64)
+EPOCH 20 : tensor(-43.5777, dtype=torch.float64)
+EPOCH 21 : tensor(-44.1214, dtype=torch.float64)
+EPOCH 22 : tensor(-43.7516, dtype=torch.float64)

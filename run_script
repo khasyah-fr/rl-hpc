@@ -1,0 +1,8 @@
+nohup python main.py --title timeout-GAIA-60mins --workload-path workloads-gaia.json --timeout 3600 &> logs/timeout-GAIA-60mins.out &
+nohup python main.py --title timeout-GAIA-30mins --workload-path workloads-gaia.json --timeout 1800 &> logs/timeout-GAIA-30mins.out &
+nohup python main.py --title timeout-LLNL-60mins --workload-path workloads-llnl.json --timeout 3600 &> logs/timeout-LLNL-60mins.out &
+nohup python main.py --title timeout-LLNL-30mins --workload-path workloads-llnl.json --timeout 1800 &> logs/timeout-LLNL-30mins.out &
+nohup python main.py --title timeout-LPC-60mins --workload-path workloads-lpc.json --timeout 3600 &> logs/timeout-LPC-60mins.out &
+nohup python main.py --title timeout-LPC-30mins --workload-path workloads-lpc.json --timeout 1800 &> logs/timeout-LPC-30mins.out &
+nohup python main.py --title timeout-NASA-60mins --workload-path workloads-nasa.json --timeout 3600 &> logs/timeout-NASA-60mins.out &
+nohup python main.py --title timeout-NASA-30mins --workload-path workloads-nasa.json --timeout 1800 &> logs/timeout-NASA-30mins.out &

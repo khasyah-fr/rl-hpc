@@ -1,0 +1,2 @@
+dataset,timeout,"f(1,0)=slowdown","f(0,1)=energy","f(0.5,0.5)=balance",experiment walltime
+workloads-nasa-cleaned-8host.json,3600,19.76986102010908,9684753170.0,4842376594.884931,104.68725275993347

@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd">
+<platform version="4.1">
+    <zone id="AS0" routing="Full">
+        <!-- This host will be used by Batsim and won't be accounted. -->
+        <host id="master_host" pstate="0" speed="1000010.0Mf">
+            <prop id="watt_per_state" value="100:100" />
+            <prop id="watt_off" value="9"/>
+        </host>
+
+        <!-- These hosts will be used to compute jobs. -->
+        <host id="0" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <!-- sleep, active, off ke on, on ke off-->
+        <!-- justifikasi, di paper on energy conservation, transisi ke lower state 0 energy
+        untuk on ke off, untuk off ke on karena di sini idle ke active similar consumption rate, diasumsikan
+        switching off ke on = state idle 
+
+        buatin workloads (hasil potongan dari workload lain), dengan n_jobs = N_JOBS=1000
+        disimpen di data/training/workload_1.json....workload_N.json
+
+        epoch n_proc:
+            get random batch from data/training
+            run parallel simulation to populate ER
+            wait all simulation ends
+            update()
+            
+
+        similar to [2], here we set the consumption rate for the state 
+        
+        typically very low, here it assumed that the power consumption rate in the sleep state is around 5%
+        of the active state. Therefore, the power is 9 (9.x rounded below) -->
+        <host id="1" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="2" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="3" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="4" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="5" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="6" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+        <host id="7" pstate="1" speed="0.0f, 101.0f, 0.00055555f, 0.00037f">
+            <prop id="watt_per_state" value="9:9,190.0:190.0,190.0:190.0,9:9"/>
+            <prop id="sleep_pstates" value="0:3:2"/>
+            <prop id="watt_off" value="9"/>
+        </host>
+    </zone>
+</platform>
